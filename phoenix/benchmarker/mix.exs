@@ -4,7 +4,7 @@ defmodule Benchmarker.Mixfile do
   def project do
     [ app: :benchmarker,
       version: "0.0.1",
-      elixir: "~> 0.14.2",
+      elixir: "~> 0.15.1",
       deps: deps ]
   end
 
@@ -23,8 +23,8 @@ defmodule Benchmarker.Mixfile do
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
     [
-      {:phoenix, "0.3.1"},
-      {:cowboy, "~> 0.10.0", github: "extend/cowboy", optional: true}
+      {:phoenix, github: "chrismccord/phoenix"},
+      {:cowboy, "~> 1.0.0"}
     ]
   end
 end
